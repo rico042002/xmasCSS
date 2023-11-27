@@ -3,6 +3,7 @@ body {
   background: #000;
   color: #fff;
   overflow: hidden;
+  margin: 0;
 }
 
 .container {
@@ -11,7 +12,7 @@ body {
   background: url(img/page-bg.png) no-repeat center center/cover;
   height: 100vh;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: center;
 }
 
@@ -36,5 +37,13 @@ body {
 
   100% {
     background-position: 100% 50%;
+  }
+}
+
+/* Media Query for Mobile View */
+@media only screen and (max-width: 600px) {
+  .animated {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+    padding: 50px 0; /* Adjust top and bottom padding for smaller screens */
   }
 }
